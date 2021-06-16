@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 28px;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Landing page */
+    /*1st Part Logo and message */
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/mainBackground2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 150px;
+}
+
+.header {
+    padding: 150px 0 0 200px;
+}
+
+.header__container, .message__container {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+}
+
+.message__container {
+    justify-content: flex-end;
+}
+
+.message__container .first {
+    font-size: 30px;
+    margin: auto 0;
+}
+
+.message__container .line {
+    height: 60px;
+}
+
+.message__text {
+    width: 350px;
+    line-height: 25px;
+    font-size: 16px;
+    margin: auto 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.line {
+    height: 100px;
+    width: 2px;
+    background-color: white;
+    margin: 0 30px;
+}
+
+.naming, .message__container .first {
+    font-weight: bold;
+}
+
+.naming, .message__container .first {
+    text-transform: uppercase;
+}
+
+.naming > .second {
+    margin-left: 80px;
+}
+
+    /* SLIDER   */
+.landing__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__container {
+    padding: 100px 0 0 200px;
+} 
+
+.slider .line {
+    height: 2px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.carousel {
+    width: 40%;
+}
+
+.carousel-item, .slider__title {
+    text-align: center;   
+}
+
+.carousel-item, .slider__name {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 70px;
+}
+
+.carousel-control-prev {
+    left: 120px
+}
+
+.carousel-control-next {
+    right: -70px;
+}
+
+.slider__container .buttons {
+    position: relative;
+}
+
+.slider__name {
+    text-align: end;
+}
+
+.slider__name::before {
+    content: "-";
+}
+    /* BUTTONS */
+
+.links {
+    margin: 100px 50px;
+}
+
+.links__link {
+    display: inline-block;
+    padding: 13px 105px;
+    background-image: linear-gradient(90deg, #E72177 0%, #131313 100%);
+    background-size: 130% auto;
+    transition: all 0.5s ease-out;
+    border-radius: 20px 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links__link p {
+    margin: 0;
+    position: relative;
+}
+
+.links__link p::before {
+    position: absolute;
+    left: -85px;
+    top: -5px;
+}
+
+.links__link .link__about::before {
+    content: url('../images/aboutLogo.png');
+}
+
+.links__link:hover {
+    background-position:right top;
+    color: #fff;
+}
+
+.links__link .link__gitlab::before {
+    content: url('../images/gitlabLogo.png');
+}
+
+.links .gitlab {
+    margin-top: 40px;
+}
+
+.svgWave {
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+}
+/* End of Landing Page */
+
+/* About Page */
+.aboutPage {
+    width: 100%;
+    min-height: 200vh;
+    padding: 0 150px;
+    background-color: #131313;
+    color: #E72177;
+    background-image: url('../images/WaveVector2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.aboutPage .title {
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 30px;
+}
+
+.aboutPage .text {
+    padding-bottom: 70px;
+}
+
+.AboutsvgWave{
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    background-color: #E72177;
+    text-align: center;
+    padding-bottom: 10px;
+}
