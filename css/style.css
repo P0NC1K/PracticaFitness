@@ -188,13 +188,11 @@ body{
 /* About Page */
 .aboutPage {
     width: 100%;
-    min-height: 200vh;
     padding: 0 150px;
     background-color: #131313;
     color: #E72177;
-    background-image: url('../images/WaveVector2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 .aboutPage .title {
@@ -218,4 +216,15 @@ footer {
     background-color: #E72177;
     text-align: center;
     padding-bottom: 10px;
+}
+
+/* WIDTH */
+@media (max-width: 1500px) {
+    .carousel {
+        width: 50%;
+    }
+
+    .landing {
+        padding: 0 50px;
+    }
 }
