@@ -327,4 +327,9 @@ footer {
     .landing {
         padding: 0 50px;
     }
+
+    .ocean {
+        bottom:-18vh;
+    }
+
 }
