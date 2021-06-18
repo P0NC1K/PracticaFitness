@@ -21,10 +21,11 @@ body{
     background-position: center;
     background-size: cover;
     padding: 0 150px;
+    overflow: hidden;
 }
 
 .header {
-    padding: 150px 0 0 200px;
+    padding: 120px 0 0 200px;
 }
 
 .header__container, .message__container {
@@ -173,8 +174,12 @@ body{
     content: url('../images/gitlabLogo.png');
 }
 
-.links .gitlab {
+.links .gitlab, .links .raport {
     margin-top: 40px;
+}
+
+.link__raport::before {
+    content: url('../images/raportLogo.png');
 }
 
 .svgWave {
@@ -182,6 +187,58 @@ body{
     width: 100%;
     bottom: -1px;
     left: 0;
+}
+
+.svgContainer {
+    position: relative;
+}
+
+.ocean {
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:-27vh;
+    left:0;
+    background: #131313; 
+}
+
+.wave {
+  background: url('../images/WaveVector.svg') repeat-x; 
+  position: absolute;
+  left: -200px;
+  bottom: -100px;
+  width: 300%;
+  height: 250px;
+  animation: waves 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) alternate infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+
+.scrollUpButton {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: #E72177;
+    border:3px solid #131313; 
+    z-index: 10;
+}
+
+.scrollUpButtonArrow {
+    width: 35px;
+    height: 35px;
+    margin: 15px 17px;
+}
+
+.active {
+    display: inline;
 }
 /* End of Landing Page */
 
@@ -212,11 +269,54 @@ body{
     left: 0;
 }
 
+.bold {
+    font-weight: bolder;
+}
+
+.enum {
+    font-weight: bold;
+}
+
+.screen {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.small {
+    display: flex;
+    width: 45%;
+    margin: 10px auto;
+}
+
+.CodeMirror {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 footer {
     background-color: #E72177;
     text-align: center;
     padding-bottom: 10px;
 }
+
+/* ANIMATIONS */
+@keyframes waves {
+    0% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
 
 /* WIDTH */
 @media (max-width: 1500px) {

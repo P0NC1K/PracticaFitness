@@ -8,114 +8,999 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules\codemirror\lib/codemirror.css">
+    <link rel="stylesheet" href="node_modules\codemirror\theme\yonce.css">
     <title>Practica</title>
 </head>
 <body>
     <div class="landing">
-        <div class="header">
-            <div class="header__container">
-                <img src="images/logo copy.svg" alt="Logo" class="logo">
-                <div class="line"></div>
-                <div class="naming">
-                    <p class="first">Fitness</p>
-                    <p class="second">Life</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="message">
-            <div class="message__container">
-                    <p class="first">Hey Salut</p>
-                <div class="line"></div>
-                <p class="message__text">Введите данные от вашего аккаунта,
-                    чтобы продолжить игру</p>
-            </div>
-        </div>
-
-        <div class="landing__container">
-            <div id="carouselExampleControls" class="slider carousel slide">
-                <div class="slider__container">
-                    <div class="slider__title">Păreri despre proiect</div>
+            <div class="header">
+                <div class="header__container">
+                    <img src="images/logo copy.svg" alt="Logo" class="logo">
                     <div class="line"></div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p >Acest stagiu de practică a fost constituit din
-                                 multe încercări și obstacole dar imediat după
-                                  fiecare dintre acestea succesele erau cele care
-                                   ieșeau la iveală. Apreciez mult efortul colegilor
-                                    care au lucrat împreună cu mine la dezvoltarea
-                                     acestui proiect și sunt extrem de satisfăcut cu
-                                      rezultatele obținute!
-                            </p>
-                            <h4 class="slider__name">Romanov A.</h4>
-                        </div>
-                        <div class="carousel-item">
-                            <p >Какой-то текст, в котором нету смысла, но
-                                текст существует. Какой-то текст, в котором 
-                                нету смысла, но текст существует.  Какой-то текст, в котором нету смысла, но текст 
-                            </p>
-                            <h4 class="slider__name">Gherdelescu G.</h4>
-                        </div>
-                        <div class="carousel-item">
-                            <p >Какой-то текст, в котором нету смысла, но
-                                текст существует. Какой-то текст, в котором 
-                                нету смысла, но текст существует.  Какой-то текст, в котором нету смысла, но текст 
-                            </p>
-                            <h4 class="slider__name">Gherdelescu G.</h4>
-                        </div>
-                        <div class="carousel-item">
-                            <p >Какой-то текст, в котором нету смысла, но
-                                текст существует. Какой-то текст, в котором 
-                                нету смысла, но текст существует.  Какой-то текст, в котором нету смысла, но текст 
-                            </p>
-                            <h4 class="slider__name">Gherdelescu G.</h4>
-                        </div>
+                    <div class="naming">
+                        <p class="first">Fitness</p>
+                        <p class="second">Life</p>
                     </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                 </div>
             </div>
-                <div class="links">
-                    <div class="about">
-                        <a href="#" class="links__link">
-                            <p class="link__about">About</p>
-                        </a>
+            
+            <div class="message">
+                <div class="message__container">
+                    <p class="first">Practica</p>
+                    <div class="line"></div>
+                    <p class="message__text">Bine a-ți venit la cea mai bună practică creată</p>
                     </div>
-
-                    <div class="gitlab">
-                        <a href="https://gitlab.com/fitnesslife/main" class="links__link">
-                            <p class="link__gitlab">GitLab</p>
-                        </a>
+                </div>
+                
+                <div class="landing__container">
+                    <div id="carouselExampleControls" class="slider carousel slide">
+                        <div class="slider__container">
+                            <div class="slider__title">Păreri despre proiect</div>
+                            <div class="line"></div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p >Acest stagiu de practică a fost constituit din
+                                        multe încercări și obstacole dar imediat după
+                                        fiecare dintre acestea succesele erau cele care
+                                        ieșeau la iveală. Apreciez mult efortul colegilor
+                                        care au lucrat împreună cu mine la dezvoltarea
+                                        acestui proiect și sunt extrem de satisfăcut cu
+                                        rezultatele obținute!
+                                    </p>
+                                    <h4 class="slider__name">Romanov A.</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <p >Practica mi-a oferit experiență foarte bună
+                                        în legătură cu lucrul în echipă. Am înțeles câte probleme pot apărea 
+                                        în timpul creării unui proiect și modul de a le rezolva. Acum sunt cu mult mai 
+                                        pregătit pentru viitoarele lucrări în echipă.
+                                    </p>
+                                    <h4 class="slider__name">Gherdelescu G.</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <p >Practica din anul 2 a fost o aventura captivantă prin lumea programării  și principiilor OOP. 
+                                        Ne-am învățat să lucrăm în echipa ceea ce e important pentru un specialist. 
+                                        Tehnologia GIT nea ajutat foarte mult la elaborarea codului.
+                                        Stagiul de practica 2 întradevăr a fost unul de folos. Am putut să punem  la încercare cunoștintele noastre și pot să spun ca ne-a reușit.
+                                        
+                                    </p>
+                                    <h4 class="slider__name">Deliu T.</h4>
+                                </div>
+                            </div>
+                            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
-                </div>  
-        </div>
-            <img src="images/WaveVector.svg" alt="waves" class="svgWave">
-    </div>
-    <div class="aboutPage">
-        <h1 class="title">About</h1>
+                    <div class="links">
+                        <div class="about">
+                            <a href="#" class="links__link">
+                                <p class="link__about">About</p>
+                            </a>
+                        </div>
+                        
+                        <div class="gitlab">
+                            <a href="https://gitlab.com/fitnesslife/main" class="links__link">
+                                <p class="link__gitlab">GitLab</p>
+                            </a>
+                        </div>
 
-        <p class="text">
-            Pe baza tematicii Fitness Club, în timp de 3 săptămâni am dezvoltat proiectul următor. Punând accent pe acuratețea codului și concentrându-ne în procesul de concepere a arhitecturii generale a proiectului, am creat 34 de clase cu funcționalități diferite. Denumirea clubului de fitness este FitnessLIFE semnificand faptul că sportul înseamnă vitalitate și stare de bine atât fizică cât și emoțională. Ne-am propus să creăm în cod obiecte tipice unei săli de sport precum aparate de forță, angajați, clienți, abonamente și automat (care oferă posibilitatea de a procura băuturi, proteine sau gustări). Fiecare client are abonament, greutate, body făt (grăsime corporală) și deja fieldurile moștenite de la clasa Person. Pe deasupra, am reușit să implementăm un feature care permite analizarea pregătirii fizice a oricărui client. Acest lucru a fost realizat în felul următor. A fost creată clasa BodyMap. În cadrul acestei clase au fost scrise metodele acesteia pentru o funcționare mai complexă și plăcută oricărui utilizator. În momentul în care este apelata metodă de afișare a BodyMap-ului, sunt afișate toate grupurile de mușchi ale unui om și în corespondență cu fiecare grup de mușchi se află un procentaj care indică nivelul de pregătire a grupei respective. 
-            Că în orice centru ce prestează servicii, aici lucrează angajați în diferite funcții. Fiecare funcție are un salariu motivant și aparte. 
-            Ulterior am lucrat la crearea clasei GymMachine care reprezintă un aparat de forță. Un aparat de forță are proprietăți că numele brandului, tipul de aparat (bară fixă, paralele, presă pentru piept, etc.) și o colecție ce deține grupurile de mușchi care sunt antrenați în timpul folosirii acelui aparat. Aparatele care lucrează cu greutăți au și proprietăți precum greutate minimă, maximă și greutate curentă. În momentul în care un client alege opțiunea de a lucra la un aparat, grupurile de mușchi care sunt incluse în mișcare avansează în pregătire și în BodyMap-ul clientului, în rândul grupurilor de mușchi antrenate de aparat, procentajul de pregătire crește.
-            În cazul în care clientul are nevoie de o sticlă de apă, o gustare sau niște proteine poate apela la automatul cu produse și să ceară orice produse disponibil în stocul automatului. Pe parcursul alegerii produselor, acestea se păstrează într-un cărucior virtual (cart) și automatul va va ține în mod constant la curent cu prețul pe care veți fi nevoit să îl plătiți.
-            Fiecare din clasele menționate au o metodă ce permite citirea datelor din consola și creearea unui nou obiect cu toate excepțiile tratate. Tot vorbind despre excepții, am creat împreună o clasa a cărei funcționalități constă în asigurarea unei citiri de la tastutura a datelor cât mai eficientă și cât mai sigură. Există un așa tip de metodă pentru principalele tipuri de date folosite în proiectul nostru. O metodă ce citește un șir de caractere de la tastatură și se asigura că acesta nu conține cifre, altă care citește un număr de la tastatură și se asigura că este un număr și că nu întrece limitele propuse și în cele din urmă o metodă generică compatibilă cu orice tip de enumerație. Citește de la tastatură o valoare și se asigura că această aparține enumerației respective.
-            În legătură cu conexiunea la baza de date, a fost creată clasa MySQLService care are asigura conexiunea, driver-ul și câteva metode ce ne permit să lucrăm foarte confortabil cu baza de date.
-            Toate aceste acțiuni și multe altele pot fi îndeplinite din cadrul meniului afișat la consola.
-            În contiuare va invităm printre liniile de cod și la rularea programului în sine.
-        </p>
-            <img src="images/WaveVector2.svg" alt="waves" class="svgWave">
-    </div>
+                        <div class="raport">
+                            <a href="https://drive.google.com/drive/u/0/folders/1kSzPtGWJ7pYfhsJmhgY0BA8q5K8h91TG" class="links__link">
+                                <p class="link__raport">Raport</p>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                    <a href="#" class="scrollUpButton"><img class="scrollUpButtonArrow" src="images/arrowUp.png" alt="arrow"></a>
+                <div class="svgContainer">
+                    <section class="ocean">
+                        <img src="images/WaveVector.svg" alt="wave" class="wave">
+                        <img src="images/WaveVector.svg" alt="wave" class="wave">
+                    </section>
+                </div>
+                <!-- <img src="images/WaveVector.svg" alt="waves" class="svgWave"> -->
+            </div>
+            </div>
+            <div class="aboutPage">
+                <h1 class="title">About</h1>
+                
+                <p class="text">
+                    Pe baza tematicii <span class="bold">Fitness Club</span>, în timp de 3 săptămâni am dezvoltat proiectul următor.
+                    Punând accent pe acuratețea codului și concentrându-ne în procesul de concepere a arhitecturii
+                    generale a proiectului, am creat <span>34 de clase</span> cu funcționalități diferite.
+                    <img src="images/screen1.png" alt="screen" class="screen">
+                    Denumirea clubului de
+                    fitness este <span class="bold">FitnessLIFE</span> semnificând faptul că sportul înseamnă vitalitate și stare de bine atât
+                    fizică cât și emoțională. Ne-am propus să creăm în cod obiecte tipice unei săli de sport precum
+                 <span class="enum">aparate de forță, angajați, clienți, abonamente și automat </span> (care oferă posibilitatea de a procura
+                  băuturi, proteine sau gustări).
+                  Fiecare client are <span class="enum">abonament, greutate, body fat </span> (grăsime corporală
+                  ) și deja fieldurile moștenite de la clasa Person.
+                  <textarea id="clientClass">
+    package md.fitnesslife.fitness_club.users;
+
+    public class Client extends Person
+    {
+        @Override
+        public String toString() {
+            return "Client{" +
+                    "bodyFat=" + bodyFat +
+                    ", weight=" + weight +
+                    ", idMusclePercentage=" + idMusclePercentage +
+                    ", musclePercentage=" + musclePercentage +
+                    ", subscription=" + subscription +
+                    '}';
+        }
+    
+        private Percentage bodyFat;
+        private double weight;
+        private short idMusclePercentage;
+        private HashMap<MuscleGroups, Percentage> musclePercentage;
+        private Subscription subscription;
+        public Client(int age, String firstName, String lastName, Percentage bodyFat, double weight,
+                        HashMap<MuscleGroups, Percentage> musclePercentage, Subscription subscription) throws SQLException, ClassNotFoundException {
+            super(age, firstName, lastName);
+            this.bodyFat = bodyFat;
+            this.weight = weight;
+            this.musclePercentage = new HashMap<MuscleGroups, Percentage>(musclePercentage);
+            this.subscription = subscription;
+    
+            String queryInsert = String.format(Locale.US, "INSERT INTO clients VALUES (NULL, '%s', '%s', %d, %d, %f, %f, %d);",
+                    firstName, lastName, age, BodyMap.checkID(), weight, bodyFat.getNumber(), Subscription.getLastID());
+    
+            Startup.database.executeNonQueryCommand(queryInsert);
+        }
+    
+        /**Read from DB
+            * @param idClient - keeps id client
+            * @throws SQLException
+            */
+        public Client( int idClient) throws  SQLException
+        {
+            super( idClient );
+    
+            ResultSet rs = Startup.database.executeReader("SELECT * FROM `clients` WHERE `idClient` LIKE " + idClient );
+    
+            this.musclePercentage = new HashMap<>();
+    
+            while ( rs.next( ) )
+            {
+                idMusclePercentage = rs.getShort("idMusclePercentage");
+    
+                this.weight = rs.getDouble( "weight" );
+                this.bodyFat = new Percentage( rs.getDouble( "bodyFat" ) );
+            }
+    
+            ResultSet rs2 = Startup.database.executeReader( "SELECT * FROM `muscle_percentage` WHERE `idMusclePercentage` LIKE "
+                    + idMusclePercentage, Startup.database.getDatabaseConnection( ) );
+            ResultSet rs3 = Startup.database.executeReader( "SELECT * FROM `subscriptions` WHERE `idSubscription` LIKE "
+                    + Subscription.getIdSubscription( idClient ), Startup.database.getDatabaseConnection( ) );
+    
+    
+            while ( rs2.next( ) )
+            {
+                this.musclePercentage.put
+                        (
+                                MuscleGroups.valueOf(rs2.getString( "muscleGroup" )),
+                                new Percentage(rs2.getDouble( "percentage" ))
+                        );
+            }
+    
+            while ( rs3.next( ) )
+                subscription = new Subscription( rs3.getShort( "idSubscription" ) );
+        }
+        //region Getters
+    
+        public Percentage getBodyFat() {
+            return bodyFat;
+        }
+    
+        public double getWeight() {
+            return weight;
+        }
+    
+        public Subscription getSubscription() {
+            return subscription;
+        }
+    
+        public HashMap<MuscleGroups, Percentage> getMusclePercentage() {
+            return musclePercentage;
+        }
+    
+        //endregion
+    
+        /**This method read data from keyboard
+            * @return new object of client
+            * @throws SQLException
+            * @throws ClassNotFoundException
+            */
+        public static Client readFromConsole() throws SQLException, ClassNotFoundException {
+            // Creating elements
+            Scanner in = new Scanner(System.in);
+    
+            System.out.println("registering client");
+    
+            String firstName = CheckManager.getNonDigitString("first name", "first name error");
+    
+            String lastName = CheckManager.getNonDigitString("last name", "last name error");
+    
+            int age = (int) CheckManager.getValidNumber("age", "we can't register you being under 8",
+                    "we can't register you being over 75", 8, 75);
+    
+            System.out.println("Enter the percentage for every muscle");
+            BodyMap bm = BodyMap.readFromConsole();
+    
+            double weight = CheckManager.getValidNumber("weight", "there's no way you are that skinny!",
+                    "there's no way you are that fat", 25, 250);
+    
+            Percentage bf = new Percentage(CheckManager.getValidNumber("body fat", "you can not have 0% or less, it's impossible!!",
+                    "you can not be that fat!!! max - 50% ", 0, 50));
+    
+            System.out.println("\ncreating subscription");
+            Subscription sub = Subscription.readFromConsole();
+    
+            return new Client(age, firstName, lastName, bf, weight, bm.getMusclePercentage(), sub);
+        }
+    
+        public static Client showLogin( ) throws SQLException, InterruptedException
+        {
+            LogHelper.showInfo( "Login screen" );
+    
+            int id = ( int ) CheckManager.getValidNumber
+                    (
+                            "Enter id",
+                            "u cant have id being under 1",
+                            "lol, i think u lie me, we dont have so many clients",
+                            1, Startup.database.getClientsNumber( )
+                    );
+    
+            LogHelper.showInfo( "Loading....." );
+            Client client = new Client( id );
+            ShowMenu.showClient( client );
+            Thread.sleep( 5000 );
+            ShowMenu.showSubscription( client.getSubscription( ) );
+            Thread.sleep( 5000 );
+            ShowMenu.showMusclePercentage( client.getMusclePercentage( ) );
+            Thread.sleep( 5000 );
+    
+            return client;
+        }
+    }           
+                </textarea>
+                  Pe deasupra, am reușit să implementăm un feature
+                   care permite analizarea pregătirii fizice a oricărui client. Acest lucru a fost realizat în felul următor.
+                    A fost creată clasa <span class="bold">BodyMap</span>.
+                    <textarea id="BodyMapClass">
+public class BodyMap {
+private int idMuscle;
+private HashMap<MuscleGroups, Percentage> musclePercentage;
+
+public BodyMap(int idMuscle, HashMap<MuscleGroups, Percentage> musclePercentage) throws SQLException, ClassNotFoundException {
+this.idMuscle = idMuscle;
+this.musclePercentage = musclePercentage;
+
+// Inserting in DB
+for(MuscleGroups mg : MuscleGroups.values()) {
+String query = String.format("INSERT INTO muscle_percentage VALUES(%d, '%s', %s)", idMuscle, mg, musclePercentage.get(mg).toString());
+
+Startup.database.executeNonQueryCommand(query);
+}
+}
+
+// region encapsulation
+
+public int getIdMuscle() {
+return idMuscle;
+}
+
+public HashMap<MuscleGroups, Percentage> getMusclePercentage() {
+return musclePercentage;
+}
+
+//end region
+
+
+@Override
+public String toString() {
+return "BodyMap{" +
+"idMuscle=" + idMuscle +
+", musclePercentage=" + musclePercentage +
+'}';
+}
+
+public static BodyMap readFromConsole() throws SQLException, ClassNotFoundException {
+HashMap<MuscleGroups, Percentage> musclePercentage = new HashMap<>();
+
+for (MuscleGroups mg : MuscleGroups.values()) {
+// Creating the groups
+int percentageNumber = (int) CheckManager.getValidNumber(mg.toString(),"you can't have a percentage lower than 1%",
+    "you can't have a percentage higher than 100%", 1, 100);
+musclePercentage.put(mg, new Percentage(percentageNumber));
+}
+System.out.println(LogHelper.ANSI_CYAN + "Loading..." + LogHelper.ANSI_RESET);
+
+// go to constructor
+return new BodyMap(checkID() + 1, musclePercentage);
+}
+
+public static int checkID() throws SQLException {
+int idMuscle=0;
+String query = String.format("SELECT MAX(idMusclePercentage) FROM muscle_percentage");
+
+ResultSet rs = Startup.database.executeReader(query);
+
+if(rs.next())
+idMuscle = rs.getInt(1);
+else
+idMuscle = 1;
+
+return idMuscle;
+}
+}
+                    </textarea>
+
+                    În cadrul acestei clase au fost scrise metodele acesteia pentru o
+                     funcționare mai complexă și plăcută oricărui utilizator. În momentul în care este apelata metodă
+                      de afișare a BodyMap-ului, sunt afișate toate grupurile de mușchi ale unui om și în corespondență
+                       cu fiecare grup de mușchi se află un procentaj care indică nivelul de pregătire a grupei respective.
+                           <img src="images/screen3.png" alt="screen" class="screen small"> 
+                        Ca în orice centru ce prestează servicii, aici lucrează <span class="screen">angajați</span> în diferite funcții. 
+                            Fiecare funcție are un salariu motivant și aparte. ce deține grupurile de mușchi care sunt antrenați în timpul folosirii acelui aparat.
+                            <textarea id="functionsClass">
+public enum Functions
+{
+    CEO ( ( double ) 25000 ),
+    Admin ( ( double ) 15700 ),
+    Accountant ( ( double ) 13400 ),
+    Cleaner( ( double ) 5000 ),
+    Trainer( ( double ) 10000 ),
+    Security ( ( double ) 14900 ),
+    Reception ( ( double ) 7000 ),
+    Engineer ( ( double ) 7500 ),
+    Masseur ( ( double ) 9300 );
+
+    private final double salary;
+
+    Functions(double salary) { this.salary = salary; }
+
+    public double getSalary() { return salary; }
+}
+                            </textarea> 
+                            Ulterior am lucrat la crearea clasei <span class="bold">GymMachine</span> care reprezintă un aparat de forță. Un aparat de forță
+                             are proprietăți ca <span class="enum">numele brandului, tipul de aparat (bară fixă, paralele, presă pentru piept, etc.) și
+                              o colecție</span>
+                              <textarea id="GymMachineClass">
+public abstract class GymMachine
+{
+    private MysqlxDatatypes.Scalar.String brandName;
+    private ArrayList<MuscleGroups> targetedMuscleGroups;
+    private GymMachineTypes type;
+
+    public GymMachine(MysqlxDatatypes.Scalar.String brandName, ArrayList<MuscleGroups> targetedMuscleGroups, GymMachineTypes type) throws SQLException, ClassNotFoundException {
+        this.brandName = brandName;
+        this.targetedMuscleGroups = new ArrayList<>(targetedMuscleGroups);
+        this.type = type;
+    }
+
+    // region getters
+    public String getBrandName() { return brandName; }
+
+    public ArrayList<MuscleGroups> getTargetedMuscleGroups() { return targetedMuscleGroups; }
+
+    public GymMachineTypes getType() { return type; }
+    // endregion
+
+    public static GymMachine readFromConsole() throws SQLException, ClassNotFoundException {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("registering gym machine");
+
+        System.out.print("brand name: ");
+        String brandName = in.nextLine();
+
+        Class<GymMachineTypes> class_ = GymMachineTypes.class;
+        GymMachineTypes type = readEnumType(class_, "gym machine type", "gym machine type error");
+
+        if (type.isWeighted()) {
+
+            int minWeight = (int) getValidNumber("min weight", "can't be under 0kg",
+                    "can't be over 100kg", 0, 100);
+
+            int maxWeight = (int) getValidNumber("max weight", "can't be under 10kg",
+                    "can't be over 250kg", 10, 250);
+
+            int currentWeight = (int) getValidNumber("current weight", "can't be under " + minWeight,
+                    "can't be over " + maxWeight, minWeight, maxWeight);
+
+            return GymMachineBuilder.getInstance().buildWeightedGymMachine(brandName, type, currentWeight, minWeight, maxWeight);
+        } else return GymMachineBuilder.getInstance().buildUnweightedGymMachine(brandName, type);
+
+    }
+
+    /**
+        * outputs to the console all of the GymMachines from the database
+        * @throws SQLException
+        */
+
+    public static void outMachines() throws SQLException {
+        ResultSet rs = Startup.database.executeReader("SELECT * FROM `gym_machines`");
+
+        System.out.println("-------------------------");
+        System.out.println("Showing machines");
+        System.out.println("-------------------------");
+
+        while (rs.next()){
+
+            GymMachineTypes type = GymMachineTypes.valueOf(rs.getString("machineType"));
+
+            int id = rs.getInt("idMachine");
+            String brand = rs.getString("brandName");
+
+            String line = String.format("ID: %d | Machine Type: %s | Brand Name: %s",id, type, brand);
+
+            if (type.isWeighted()) {
+                int min = rs.getInt("minWeight");
+                int max = rs.getInt("maxWeight");
+                int current = rs.getInt("currentWeight");
+
+                line += String.format(" | Min Weight: %d | " +
+                "Max Weight: %d | Current Weight: %d", min, max, current);
+            }
+
+            System.out.println(line);
+
+        }
+
+        System.out.println("-------------------------");
+    }
+
+    /**
+        * @return a set that contains all the ids of the GymMachines in the database
+        * @throws SQLException
+        */
+
+    public static Set<Integer> getIDs() throws SQLException {
+        Set<Integer> ids = new HashSet<>();
+
+        ResultSet rs = Startup.database.executeReader("SELECT idMachine FROM gym_machines");
+
+        while(rs.next())
+            ids.add(rs.getInt(1));
+        
+        return ids;
+    }
+
+
+    /**
+        * removes a gym machine from the database
+        * @throws SQLException
+        * @throws ClassNotFoundException
+        */
+
+    public static void removeMachine() throws SQLException, ClassNotFoundException {
+
+        outMachines();
+
+        Set<Integer> ids = getIDs();
+
+        int finalID = 0;
+
+        while (true) {
+            int id = (int) CheckManager.getValidNumber("id", "no negative ids",
+                    "no ids over 1000", 0, 1000);
+
+            if (ids.contains(id)) {
+                finalID = id;
+                break;
+            }
+        }
+
+        Startup.database.executeNonQueryCommand("DELETE FROM gym_machines WHERE idMachine = " + finalID);
+
+    }
+
+}
+                              </textarea>
+                               Aparatele care lucrează cu greutăți au și proprietăți precum <span class="enum">greutate minimă, maximă și greutate curentă</span>.
+                               <textarea id="weightedMachineClass" >
+public class WeightedGymMachine extends GymMachine {
+    private int currentWeight;
+    private int minWeight;
+    private int maxWeight;
+
+    public WeightedGymMachine(String brandName, ArrayList<MuscleGroups> targetedMuscleGroups, GymMachineTypes type,
+                                int currentWeight, int minWeight, int maxWeight) throws SQLException, ClassNotFoundException {
+        super(brandName, targetedMuscleGroups, type);
+        this.currentWeight = currentWeight;
+        this.minWeight = minWeight;
+        this.maxWeight = maxWeight;
+
+        Startup.database.executeNonQueryCommand(String.format("INSERT INTO gym_machines VALUES (NULL, '%s', '%s', %d, %d, %d)",
+                getType(), getBrandName(), getMinWeight(), getMaxWeight(), getCurrentWeight()));
+
+        System.out.println("bought and registered 0weighted gym machine!");
+    }
+
+    public int getCurrentWeight() { return currentWeight; }
+
+    public int getMinWeight() { return minWeight; }
+
+    public int getMaxWeight() { return maxWeight; }
+
+}
+                               </textarea>
+                                În momentul în care un client alege opțiunea de a lucra la un aparat, grupurile de mușchi care sunt
+                                 incluse în mișcare avansează în pregătire și în <span class="bold">BodyMap</span>-ul clientului, în rândul grupurilor de mușchi
+                                  antrenate de aparat, procentajul de pregătire crește.
+                                  În cazul în care clientul are nevoie de o sticlă de apă, o gustare sau niște proteine poate
+                                     apela la automatul cu produse și să ceară orice produse disponibil în stocul automatului.
+                                     <textarea id="vendingMachineClass">
+public class VendingMachine {
+    public static double bill;
+
+    /**This method output info from DB
+        * @throws SQLException
+        */
+    public static void outMarket() throws SQLException {
+        ResultSet rs = Startup.database.executeReader("SELECT * FROM `items`");
+
+        System.out.println("\nAvailable Products");
+        System.out.println("-----------------");
+
+        while (rs.next()) {
+            int id = rs.getInt("itemID");
+            String name = rs.getString("name");
+            int quantity = rs.getInt("quantity");
+            int price = rs.getInt("price");
+
+            System.out.format("ID: %d | Name: %s | Quantity: %d | Price: %d\n",
+                    id, name, quantity, price);
+        }
+
+        System.out.println("-----------------");
+
+    }
+
+    /** This method add items to cart
+        * @param cart - keeps cart elements
+        * @param name - keeps name value
+        * @param quantity - keeps quantity value
+        */
+    public static void addToCart(HashMap<String, Integer> cart, String name, Integer quantity) {
+        if (cart.get(name) != null) cart.put(name, quantity + cart.get(name) );
+        else cart.put(name, quantity);
+
+    }
+
+    /** This method get ids from DB
+        * @return ids
+        * @throws SQLException
+        */
+    public static Set<Integer> getItemIDs() throws SQLException
+    {
+        Set<Integer> ids = new HashSet<>();
+
+        ResultSet rs = Startup.database.executeReader("SELECT itemID FROM items");
+
+        while (rs.next())
+            ids.add(rs.getInt(1));
+
+        return ids;
+    }
+
+    /**
+        * This method output items from cart
+        */
+    public static void outCart(HashMap<String, Integer> cart){
+        System.out.println("\nYour Cart");
+        System.out.println("----------");
+        for(Map.Entry<String, Integer> pair : cart.entrySet()){
+            String key = pair.getKey();
+            Integer value = pair.getValue();
+            System.out.println(key + " : " + value);
+        }
+        System.out.println("----------");
+    }
+
+    /**This method buy items from vending machine
+        * @throws SQLException
+        * @throws ClassNotFoundException
+        */
+    public static void buyItems() throws SQLException, ClassNotFoundException {
+        Scanner in = new Scanner(System.in);
+
+        HashMap<String, Integer> cart = new HashMap<>();
+        Integer quantity;
+
+        Set<Integer> ids = getItemIDs();
+
+        int finalID = 0;
+        int currentQuantity = 0;
+
+        boolean quit = false;
+
+        while (!quit) {
+            int id = 0;
+            while ( id == 0 | !ids.contains(id)) {
+                if (!ids.contains(id) & id != 0)
+                    System.err.println("input an valid id from the following list");
+
+                outMarket();
+
+                System.out.println("\nSelect id of item you want to buy (insert 0 to quit)");
+                id = (int) CheckManager.getValidNumber("id", "no negative ids",
+                        "no ids over 1000", 0, 1000);
+
+                if (id == 0) {
+                    quit = true;
+                    break;
+                }
+            }
+
+            if (ids.contains(id)) {
+                finalID = id;
+
+                ResultSet rs = Startup.database.executeReader("SELECT * FROM items WHERE itemID = " + finalID);
+
+                while (rs.next()) {
+                    String name = rs.getString("name");
+                    Integer price = rs.getInt("price");
+                    int itemsLeft = rs.getInt("quantity");
+
+                    quantity = (int) CheckManager.getValidNumber("Input quantity", "You cannot buy a negative quantity" +
+                            "goods or equal to 0", "You cannot buy more than " + itemsLeft + " items of that type", 1, itemsLeft);
+
+                    currentQuantity = itemsLeft - quantity;
+
+                    if (currentQuantity == 0) {
+                        Startup.database.executeNonQueryCommand("DELETE FROM items WHERE itemID = " + finalID);
+                    } else {
+                        Startup.database.executeNonQueryCommand("UPDATE items SET quantity = " + currentQuantity + " WHERE itemID = " + finalID);
+                    }
+                    addToCart(cart, name, quantity);
+                    bill = bill + (price * quantity);
+                    break;
+                }
+            }
+            outCart(cart);
+            System.out.println("Your bill : " + bill);
+            System.out.println("----------");
+        }
+    }
+}
+                                     </textarea>
+                                     Pe 
+                                     parcursul alegerii produselor, acestea se păstrează într-un cărucior virtual (cart) și automatul
+                                       va ține în mod constant la curent cu prețul pe care veți fi nevoit să îl plătiți.
+                                          <img src="images/screen4.png" alt="sc" class="screen small">
+                                          <img src="images/screen5.png" alt="sc" class="screen small">
+                                        Fiecare din clasele menționate au o metodă ce permite citirea datelor din consola și creearea
+                                         unui nou obiect cu toate excepțiile tratate. Tot vorbind despre excepții, am creat împreună
+                                          o clasa a cărei funcționalități constă în asigurarea unei citiri de la tastutura a datelor
+                                           cât mai eficientă și cât mai sigură. 
+                                           <textarea id="checkManagerClass">
+public class CheckManager {
+    private static final Scanner in = new Scanner(System.in);
+
+    /**This method check if what you input from keyboard matches with variables from enum Class
+        * @param class_ - keeps name of enum class
+        * @param message - keeps a positive
+        * @param errorMessage - keeps an error message
+        * @param <T> - generic type
+        * @return a component from enum class
+        */
+    public static <T extends Enum<T>> T readEnumType(Class<T> class_, String message, String errorMessage) {
+
+        String result = "";
+
+        while (true) {
+
+            Set<T> enumSet = EnumSet.allOf(class_);
+            System.out.println("----------------");
+            enumSet.forEach(System.out::println);
+            System.out.println("----------------");
+
+            LogHelper.showRequired( message, "Enum" );
+            result = in.next();
+            for (T t : EnumSet.allOf(class_)) {
+                if (result.equalsIgnoreCase(t.toString())) return t;
+            }
+
+            System.err.println(errorMessage + ": " + result);
+
+            try { Thread.sleep(100);}
+            catch (InterruptedException e) { e.printStackTrace(); }
+
+        }
+    }
+
+    /** This method check if
+        *@param message - keeps a positive
+        * @param errorMessage - keeps an error message
+        * @return result of this validation
+        */
+    public static String getNonDigitString(String message, String errorMessage) {
+
+        String result = "";
+        while (true) {
+            LogHelper.showRequired( message, "Non digit string" );
+
+            while (result.equals("")) {
+                result = in.next();
+            }
+
+            if (result.matches(".*\\d.*")) {
+                System.err.println(errorMessage);
+
+                try { Thread.sleep(100); }
+                catch (InterruptedException e) { e.printStackTrace(); }
+            }
+            else break;
+        }
+        return result;
+    }
+
+    /** This method check if number is valid
+        * @param message - keeps positive message
+        * @param minValueErrorMessage - keeps error message
+        * @param maxValueErrorMessage - keeps error message
+        * @param minValue - keeps min value
+        * @param maxValue - keeps max value
+        * @return valid number
+        */
+    public static double getValidNumber(String message, String minValueErrorMessage,
+                                        String maxValueErrorMessage, int minValue, int maxValue) {
+        double number = 0;
+
+        while(true) {
+
+            String stringNumber = "";
+
+            LogHelper.showRequired( message, "int/float" );
+
+            while(stringNumber.equals("")) {
+                stringNumber = in.nextLine();
+            }
+
+            if (stringNumber.matches("^[0-9]*.[0-9]*$")) {
+
+                number = Double.parseDouble(stringNumber);
+
+                if (number <= maxValue & number >= minValue) break;
+                else {
+
+                    if (number < minValue) System.err.println(minValueErrorMessage);
+                    else if (number > maxValue) System.err.println(maxValueErrorMessage);
+
+                    try { Thread.sleep(100); }
+                    catch (InterruptedException e) { e.printStackTrace(); }
+                }
+            } else {
+                System.err.println("input a number (xx.xx)");
+
+                try { Thread.sleep(100); }
+                catch (InterruptedException e) { e.printStackTrace(); }
+            }
+
+        }
+
+        return number;
+    }
+}
+                                           </textarea>
+                                           Există un așa tip de metodă pentru principalele tipuri
+                                            de date folosite în proiectul nostru. O metodă ce citește un șir de caractere de la tastatură
+                                             și se asigura că acesta nu conține cifre, altă care citește un număr de la tastatură și se
+                                              asigura că este un număr și că nu întrece limitele propuse și în cele din urmă o metodă
+                                               generică compatibilă cu orice tip de enumerație. Citește de la tastatură o valoare și se
+                                                asigura că această aparține enumerației respective.
+                                                 În legătură cu conexiunea la baza de date, a fost creată clasa <span class="bold">MySQLService</span> care are asigura conexiunea
+                                                 , driver-ul și câteva metode ce ne permit să lucrăm foarte confortabil cu baza de date.
+                                                 <textarea id="mySQLServiceClass">
+public class MySQLService
+{
+    private static Connection databaseConnection;
+    private static Statement databaseStatement;
+
+    /**
+        * This con constructor set connection with DB and load DB`s driver
+        */
+    public MySQLService( String host, String database,
+                            String user, String password )
+    {
+        loadJdbc( );
+
+        try
+        {
+            String url = "jdbc:mysql://" + host + ":3306/" + database + "?serverTimezone=UTC&autoReconnect=true";
+            databaseConnection = DriverManager.getConnection( url, user, password);
+            databaseStatement = databaseConnection.createStatement( );
+            LogHelper.showSuccess( "Connected to database" );
+        }
+        catch ( SQLException ex )
+        {
+            LogHelper.showError( "SQLException: " + ex.getMessage( ) );
+            LogHelper.showError( "SQLState: " + ex.getSQLState( ) );
+            LogHelper.showError( "VendorError: " + ex.getErrorCode( ) );
+        }
+    }
+
+    public Connection getDatabaseConnection( ) { return databaseConnection; }
+
+    /**
+        * This method load the driver
+        */
+    private void loadJdbc( )
+    {
+        LogHelper.showWarning( "Loading driver...." );
+
+        try
+        {
+            Class.forName( "com.mysql.cj.jdbc.Driver" );
+        }
+        catch ( ClassNotFoundException e )
+        {
+            LogHelper.showError( "Cannot find the driver in the classpath!" );
+        }
+    }
+
+    /**This method close connection with DB
+        * @throws SQLException
+        */
+//    public void closeConnection() throws SQLException
+//    {
+//        databaseStatement.close();
+//        databaseConnection.close();
+//    }
+
+    /** This method execute nonQuery command for DB
+        * @param query - keeps MySQL query expression
+        * @throws SQLException
+        * @throws ClassNotFoundException
+        */
+    public void executeNonQueryCommand(String query) throws SQLException, ClassNotFoundException
+    {
+        databaseStatement.executeUpdate( query );
+    }
+
+    /**
+        * @param query - keeps MySQL query expression
+        * @return DB executed query statement
+        * @throws SQLException
+        */
+    // you need to close the connection after using the ResultSet
+    public ResultSet executeReader(String query) throws SQLException
+    {
+        return databaseStatement.executeQuery( query );
+    }
+
+    public ResultSet executeReader(String query, Connection connection) throws SQLException
+    {
+        return connection.createStatement( ).executeQuery( query );
+    }
+
+    /**
+        * This method drops every single table from DB
+        */
+    public void dropTables()
+    {
+        LogHelper.showWarning("Dropping all the tables");
+
+        try
+        {
+            executeNonQueryCommand("DROP TABLE clients");
+
+            executeNonQueryCommand("DROP TABLE subscriptions");
+
+            executeNonQueryCommand("DROP TABLE muscle_percentage");
+
+            executeNonQueryCommand("DROP TABLE employee");
+
+            executeNonQueryCommand("DROP TABLE gym_machines");
+
+            executeNonQueryCommand("DROP TABLE items");
+
+            LogHelper.showSuccess("deleted all the tables");
+        }
+        catch (SQLException | ClassNotFoundException exception)
+        {
+            LogHelper.showError( "Exception while droping tables" + exception.getMessage( ) );
+        }
+    }
+
+    public int getClientsNumber() throws SQLException
+    {
+        int result = 0;
+
+        ResultSet rs = executeReader( "SELECT * FROM `clients`" );
+        while ( rs.next( ) )
+            result++;
+
+        return result;
+    }
+
+    /** This method create tables if they don`t exist
+        * @throws SQLException
+        * @throws ClassNotFoundException
+        */
+    public void createIfNotExist() throws SQLException, ClassNotFoundException
+    {
+        LogHelper.showWarning( "checking if all tables in db exists, and create it if not exists" );
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS subscriptions (" +
+                "idSubscription INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
+                "status ENUM('valid','finished','blocked') NOT NULL," +
+                "type ENUM('weekly', 'monthly', 'yearly') NOT NULL," +
+                "startDate DATE NOT NULL," +
+                "finishDate DATE NOT NULL);" );
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS muscle_percentage (" +
+                "idMusclePercentage int NOT NULL," +
+                "muscleGroup ENUM('chest', 'biceps', 'triceps', 'quads', 'hamstrings', 'calves', 'shoulders', 'back', 'abs', 'obliques', 'cardio') NOT NULL," +
+                "percentage DOUBLE NOT NULL," +
+                "CHECK (percentage > 0 AND percentage <= 100)," +
+                "PRIMARY KEY(idMusclePercentage, muscleGroup))" );
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS clients (" +
+                "idClient INT PRIMARY KEY NOT NULL AUTO_INCREMENT," +
+                "firstName VARCHAR(30) NOT NULL," +
+                "lastName VARCHAR(30) NOT NULL," +
+                "age INT NOT NULL," +
+                "idMusclePercentage INT NOT NULL," +
+                "FOREIGN KEY (idMusclePercentage) REFERENCES muscle_percentage(idMusclePercentage)," +
+                "weight DOUBLE NOT NULL," +
+                "bodyFat DOUBLE NOT NULL," +
+                "idSubscription INT NOT NULL," +
+                "FOREIGN KEY (idSubscription) REFERENCES subscriptions(idSubscription));" );
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS employee (" +
+                "idEmp INT PRIMARY KEY NOT NULL AUTO_INCREMENT," +
+                "firstName VARCHAR(50) NOT NULL," +
+                "lastName VARCHAR(50) NOT NULL," +
+                "age INT NOT NULL," +
+                "sex CHAR(1) NOT NULL," +
+                "registration VARCHAR (50) NOT NULL," +
+                "function ENUM ('CEO', 'Admin', 'Accountant', 'Cleaner', 'Trainer', 'Security', 'Reception' , " +
+                "'Engineer', 'Masseur') NOT NULL );");
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS gym_machines (" +
+                "idMachine INT NOT NULL PRIMARY KEY AUTO_INCREMENT," +
+                "machineType ENUM('AbsGymMachine', 'BenchPress', 'GymBike', 'LatPullingDown', " +
+                "'LegCurlExtension', 'LegPress', 'PullUpBar', 'SeatedCalfRaise', 'Treadmill') NOT NULL," +
+                "brandName VARCHAR(40) NOT NULL," +
+                "minWeight INT," +
+                "maxWeight INT," +
+                "currentWeight INT);" );
+
+        executeNonQueryCommand( "CREATE TABLE IF NOT EXISTS items(" +
+                "itemID INT PRIMARY KEY NOT NULL  AUTO_INCREMENT," +
+                "name VARCHAR(40) NOT NULL," +
+                "quantity INT NOT NULL," +
+                "price DOUBLE NOT NULL);" );
+
+        LogHelper.showSuccess( "Work with database is ready" );
+    }
+}
+                                                 </textarea>
+                                                  Toate aceste acțiuni și multe altele pot fi îndeplinite din cadrul meniului afișat la consolă.
+                                                   În contiuare vă invităm printre liniile de cod și la rularea programului în sine.
+                </p>
+                <img src="images/WaveVector2.svg" alt="waves" class="svgWave">
+            </div>
     <footer>
             Made by people for people        
     </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="node_modules\codemirror\lib/codemirror.js"></script>
+        <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

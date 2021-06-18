@@ -1,3 +1,10 @@
-<svg width="1920" height="421" viewBox="0 0 1920 421" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M-135 399.283C-135 399.283 159.242 145.724 737.842 218.586C1316.44 291.447 1611.99 107.241 1846.83 61.2039C2069.83 17.4868 2758 0 2758 0V443H-135V399.283Z" fill="#131313"/>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198">
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="-10.959%" y2="100%">
+      <stop stop-color="#131313" stop-opacity=".25" offset="0%"/>
+      <stop stop-color="#131313" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z" transform="matrix(-1 0 0 1 1600 0)"/>
 </svg>
